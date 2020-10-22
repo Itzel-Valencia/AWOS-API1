@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/holamundodos','Controller@index')->name('holamundodos.index');
+Route::get('/miprimerarray','Materias\controllerMaterias@getAlumnos')->name('alumnos'); 
+//Rutas Materias
+Route::resource('/helloworld', 'Materias\controllerMaterias');
+
+
